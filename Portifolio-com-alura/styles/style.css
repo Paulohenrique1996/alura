@@ -89,6 +89,9 @@ body{
 .apresentacao__links__link:hover{
     background-color: var(--cor-hover);
 }
+.apresentacao__img{
+    width:50%;
+}
 .rodape{
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
@@ -97,5 +100,24 @@ body{
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 10% 0% 0% 15%;
+    }
+    .cabecalho__menu__link{
+        font-size: 1.4rem;
+
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+    .apresentacao__img{
+        width:auto;
+    }
     
 }
